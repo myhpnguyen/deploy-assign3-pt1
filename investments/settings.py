@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from django.urls import path, include, re_path
+from django.views.static import serve
+from django.conf import settings
 from datetime import timedelta
 import os
 
